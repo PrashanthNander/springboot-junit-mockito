@@ -17,9 +17,4 @@ public interface TaskService {
 
     Optional<Task> findTaskById(String taskId);
 
-    List<Task> findTasksBySeverity(String severity);
-
-    List<Task> findTasksBySeverityAndAssignee(String severity, String assignee);
-
-
 }

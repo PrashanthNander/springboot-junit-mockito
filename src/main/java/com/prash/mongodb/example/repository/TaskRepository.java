@@ -10,12 +10,5 @@ import java.util.Optional;
 
 @Repository
 public interface TaskRepository extends MongoRepository<Task, String> {
-
-
-    public List<Task> findBySeverity(String severity);
-
-    @Query("{severity: ?0, assignee: ?1}")
-    public List<Task> findBySeverityAndAssignee(String severity, String assignee);
-
     Optional<Task> findByTaskId(String taskId);
 }

@@ -129,7 +129,6 @@ public class TaskServiceTest {
 
     }
 
-
     private List<Task> taskList() {
         List<Task> tasks = new ArrayList<>();
         Task task1 = Task.builder().taskId("200").taskType(TaskType.NONTECHNICAL).assignee("Mike").description("Tech Case").severity(TaskSeverity.HIGH).build();
