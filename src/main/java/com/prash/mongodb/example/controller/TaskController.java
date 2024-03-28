@@ -46,16 +46,4 @@ public class TaskController {
         return new ResponseEntity<>(tasks, HttpStatus.OK);
     }
 
-    @GetMapping("/task/severity/{severity}")
-    public ResponseEntity<List<Task>> getTasksBySeverity(@PathVariable String severity) {
-        List<Task> tasks = taskService.findTasksBySeverity(severity);
-        return new ResponseEntity<>(tasks, HttpStatus.OK);
-    }
-
-    @GetMapping("/task/search")
-    public ResponseEntity<List<Task>> getTasksBySeverityAndAssignee(@RequestParam("severity") String severity,
-                                                                    @RequestParam("assignee") String assignee) {
-        List<Task> tasks = taskService.findTasksBySeverityAndAssignee(severity, assignee);
-        return new ResponseEntity<>(tasks, HttpStatus.OK);
-    }
 }
