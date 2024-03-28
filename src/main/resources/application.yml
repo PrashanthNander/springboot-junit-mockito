@@ -1,0 +1,14 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://prash:*****@mycluster.kngtitw.mongodb.net/demo
+      database: demo
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
