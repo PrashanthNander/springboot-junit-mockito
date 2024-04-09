@@ -74,7 +74,7 @@ public class TaskServiceTest {
     }
 
     @Test
-    public void onFind_returnTask_ifExists() {
+    public void onFindByTaskId_returnTask_ifExists() {
         
         Mockito.when(taskRepository.findByTaskId(task.getTaskId())).thenReturn(Optional.of(task));
         
